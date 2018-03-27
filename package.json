@@ -1,0 +1,25 @@
+{
+  "name": "Wish-You-Were-Here",
+  "version": "1.0.0",
+  "description": "An interactive wait time portal for the top Florida theme parks.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contemptible/wish-you-were-here-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "nodemon": "^1.17.2",
+    "superagent": "^3.8.2",
+    "themeparks": "^4.6.11"
+  }
+}
