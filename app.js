@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+const { CLIENT_ORIGIN } = require('./config');
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -11,7 +13,9 @@ const attractions = require('./attractions.js');
 const app = express();
 
 
-app.use(cors());
+app.use(cors({
+  origin: CLIENT_ORIGIN
+}));
 
 
 app.get('/weather/:zip', (req, res) => {
